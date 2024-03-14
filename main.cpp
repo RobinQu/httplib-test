@@ -5,7 +5,7 @@
 using namespace httplib;
 
 static void send_request(Client& client, const std::string& body) {
-    auto res = client.Post("/api/chat", body, "application/x-www-form-urlencoded");
+    auto res = client.Post("/api/chat", body, "application/json");
     if (res) {
         std::cout << res->body << std::endl;
     } else {
