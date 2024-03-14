@@ -27,7 +27,7 @@ int main()
         "stream": false
     })";
 
-    // request_body_1 is okay
+    // request_body_1 is working fine sometimes
     send_request(client, request_body_1);
 
 
